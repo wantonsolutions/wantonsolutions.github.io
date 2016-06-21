@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	font: inherit;
 	font-size: 100%;
-	vertical-align: baseline;
+	/*vertical-align: baseline;*/
 	border: 0;
 }
 /* HTML5 display-role reset for older browsers */
@@ -90,7 +90,7 @@ header h2 {
 }
 
 .inner {
-  width: 620px;
+  width: 1000px;
   margin: 0 auto;
 }
 
@@ -227,8 +227,9 @@ th {
 
 td {
   font-weight: 300;
-  text-align: center;
+  text-align: left;
   border: 1px solid #ebebeb;
+  padding: 15px;
 }
 
 form {
