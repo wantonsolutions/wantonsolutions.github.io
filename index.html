@@ -39,17 +39,62 @@
           <a href="https://github.com/wantonsolutions" id="view-on-github" class="button"><span>View on GitHub</span></a>
         </section>
 -->
-        <hr>
 
-        <section id="main_content">
-          <h2>
-              <a id="About" class="anchor" href="#About" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About</h2><hr>
+<section id="main_content">
+    <hr>
+<h2><a id="About" class="anchor" href="#About" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About</h2><hr>
 
           <p> I am a new MSc student at the University of British
           Columbia. I completed my undergraduate at UBC in May of 2016
           majoring in computer science. Currently I am working with <a
           href="http://www.cs.ubc.ca/~bestchai/">Ivan Beschastnikh</a>
       on distributed systems analysis.</p>
+              
+
+<h2><a id="About" class="anchor" href="#Publications" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Publications</h2><hr>
+
+<table class="projtable">
+    <tbody>
+    <tr>
+        <td style="width:5%">
+            <a href="https://bitbucket.org/bestchai/dinv">
+                <h3> Under Submission </h3> 
+            </a>
+        </td>
+        <td>
+            Checking distributed systems using likely state invariants <br>
+            Stewart Grant,
+            <a href=https://github.com/hendrikcech>Hendrick Chech</a>,
+            <a href=http://www.cs.ubc.ca/~bestchai/>Ivan Beschastnikh</a><br>
+            [Under Submission]
+
+        </td>
+   </tr>
+    <tr>
+        <td style="width:5%">
+            <a href="http://www.cs.ubc.ca/~bestchai/papers/dinv-poster-sosp15.pdf">
+                poster
+            </a>
+            <a href="http://www.cs.ubc.ca/~bestchai/papers/dinv-poster-abstract-sosp15.pdf">
+                abstract
+            </a>
+        </td>
+        <td>
+            Inferring likely data invariants of distributed systems <br>
+            Stewart Grant, 
+            <a href=https://www.linkedin.com/in/samcreed>Sam Creed</a>,
+            <a href=http://www.cs.ubc.ca/~bestchai/>Ivan Beschastnikh</a><br>
+            Poster at <a href="http://www.ssrc.ucsc.edu/sosp15/">SOSP 2015</a>
+
+        </td>
+   </tr>
+    
+
+
+   </tbody>
+</table>
+
+
 
 
 <h2>
@@ -63,15 +108,35 @@
             </a>
         </td>
         <td>
-            <h4>DInv (automatic distributed invariant detector)</h4>
+            <h4>Dinv (automatic distributed invariant detector)</h4>
 
                     <p> Distributed systems are complex and require
-                    maticulous development to correctly handel
-                    asynchrounous execution, and partial failures.
+                    meticulous development to correctly handle
+                    asynchronous execution, and partial failures.
                     DInv is a tool for automatically detecting likely
                     data invariants in distributed systems. Data
-                    invariants are useful for verifing the correctness
+                    invariants are useful for verifying the correctness
                     of a system</p>
+
+        </td>
+   </tr>
+    <tr>
+        <td style="width:33%">
+            <a href="https://github.com/arcaneiceman/GoVector/">
+                <img class="logo" alt="govector-logo" src="images/govector.png" width="400"></img>
+            </a>
+        </td>
+        <td>
+            <h4>GoVector (vector clock library and instrumentation tool)</h4>
+
+                    <p> Vector clocks are useful for reasoning about
+                    concurrency and developing protocols.  GoVector is
+                    an optimized vector clock library which appends
+                    vector clocks to arbitrary network payloads. It
+                    also provides an instrumentation tool for
+                    automatically added vector clocks to programs
+                    using Go's net library.
+                    </p>
 
         </td>
    </tr>
@@ -84,9 +149,9 @@
         <td>
             <h4>Dovid (automatic distributed system documenter)</h4>
 
-                    <p> Distibuted systems can be diffult to
+                    <p> Distributed systems can be difficult to
                     understand from just reading source code. The most
-                    integeral part of a distributed system is its
+                    integral part of a distributed system is its
                     network communication. Dovid automatically detects
                     network communication and generates documentation
                     for variables which either affect or are affected
@@ -94,8 +159,68 @@
 
         </td>
    </tr>
+        <td style="width:33%">
+            <a href="https://github.com/zipengliu/Pangaea">
+                <img class="logo" alt="pangaea-logo" src="images/pangaea.png" width="400"></img>
+            </a>
+        </td>
+        <td>
+            <h4>Pangaea (distributed state visualization [in production])</h4>
+
+                    <p> 
+                    Changes and progressions of distributed state are
+                    hard to reason about through the inspection of
+                    logs. Visualizing distributed state can help
+                    developers better understand a systems behaviour.
+                    Pangaea visualized the separation between
+                    instances of a systems state, and traces the
+                    transitions through time.
+                    </p>
+
+        </td>
+    </tr>
+    <tr>
+        <td style="width:33%">
+            <a href="https://github.com/wantonsolutions/obeah">
+                <img class="logo" alt="obeah-logo" src="images/obeah.png" width="400"></img>
+            </a>
+        </td>
+        <td>
+            <h4>Obeah (SMT guided byzantine fuzz testing [in production])</h4>
+
+                    <p> 
+
+                    SMT guided fuzz testing is useful for detecting
+                    bugs which are difficult for developers to reason
+                    about, and which have a low probability of being
+                    triggered randomly. Obeah uses SMT symbolic
+                    execution to manipulate network payloads, and
+                    cause nodes in a distributed system to execute
+                    unlikely control flow paths.
+                    
+                    </p>
+
+        </td>
+           </tr>
+
+
    </tbody>
 </table>
+
+<h2>
+              <a id="Interests" class="anchor" href="#About" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Interests</h2><hr>
+
+          <p>
+
+          Academically I am interested in the design, implementation
+          and verification of distributed systems. Extracurricularly, I
+          enjoy 
+          <a href=https://www.8a.nu/>rock climbing</a>,
+          <a href=https://www.facebook.com/groups/1726043044294673/>juggling</a>,
+          Solving <a href=http://twistypuzzles.com/>twisty puzzles</a>
+          and <a href=http://www.dichne.com/>watching sumo</a>.
+          
+          </p>
         </section>
 
         <footer>
