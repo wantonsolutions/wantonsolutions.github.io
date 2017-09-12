@@ -44,7 +44,7 @@
     <hr>
 <h2><a id="About" class="anchor" href="#About" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About</h2><hr>
 
-          <p> I am a new MSc student at the University of British
+          <p> I am a second year MSc student at the University of British
           Columbia. I completed my undergraduate at UBC in May of 2016
           majoring in computer science. Currently I am working with <a
           href="http://www.cs.ubc.ca/~bestchai/">Ivan Beschastnikh</a>
@@ -89,8 +89,6 @@
         </td>
    </tr>
     
-
-
    </tbody>
 </table>
 
@@ -101,6 +99,25 @@
     <a id="Projects" class="anchor" href="#Projects" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Projects</h2><hr>
 <table class="projtable">
     <tbody>
+    
+    <tr>
+        <td style="width:5%">
+            <a href="https://github.com/wantonsolutions/dara">
+                <img class="logo" alt="dinv-logo" src="images/dara.png" width="400"></img>
+            </a>
+        </td>
+        <td>
+            <h4>Dara (distributed dynamic verification)</h4>
+
+                    <p> Dara models distributed systems based soely on
+                    state traces. The model is verified using the SPIN
+                    model checker against user defined assertions.
+                    Dara's can infer new exections not present in
+                    input traces and check them for violations of
+                    safty and liveness conditions.  </p>
+
+        </td>
+   </tr>
     <tr>
         <td style="width:5%">
             <a href="https://bitbucket.org/bestchai/dinv">
@@ -122,20 +139,19 @@
    </tr>
     <tr>
         <td style="width:33%">
-            <a href="https://github.com/arcaneiceman/GoVector/">
+            <a href="https://github.com/DistributedClocks">
                 <img class="logo" alt="govector-logo" src="images/govector.png" width="400"></img>
             </a>
         </td>
         <td>
-            <h4>GoVector (vector clock library and instrumentation tool)</h4>
+            <h4>Distributed Clocks (vector clock library and instrumentation tool)</h4>
 
                     <p> Vector clocks are useful for reasoning about
-                    concurrency and developing protocols.  GoVector is
-                    an optimized vector clock library which appends
-                    vector clocks to arbitrary network payloads. It
-                    also provides an instrumentation tool for
-                    automatically added vector clocks to programs
-                    using Go's net library.
+                    concurrency and developing protocols.
+                    DistributedClocks is an optimized vector clock
+                    library for Go, Java, C and C++.  It also provides
+                    an instrumentation tool for automatically added
+                    vector clocks to programs using Go's net library.
                     </p>
 
         </td>
@@ -165,14 +181,14 @@
             </a>
         </td>
         <td>
-            <h4>Pangaea (distributed state visualization [in production])</h4>
+            <h4>Dviz (distributed state visualization [in production])</h4>
 
                     <p> 
                     Changes and progressions of distributed state are
                     hard to reason about through the inspection of
                     logs. Visualizing distributed state can help
                     developers better understand a systems behaviour.
-                    Pangaea visualized the separation between
+                    Dviz visualized the separation between
                     instances of a systems state, and traces the
                     transitions through time.
                     </p>
