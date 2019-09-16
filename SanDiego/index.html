@@ -4,13 +4,53 @@
 		<link type="text/css" rel="stylesheet" href="theme.css" />
 		<meta name="Format" content="complete" />
 		<title>San Deigo Notes</title>
+    <style>
+        #map {
+                height: 400px;  /* The height is 400 pixels */
+                width: 100%;  /* The width is the width of the web page */
+               }
+          
+    </style>
 	</head>
 <body>
 <h1 id="reading_lambda.pngreadinglambdauniversityofchicagoprogramminglanguagesreadinggroup"><img src="writing.jpg" alt="" title="Writing Image" />San Diego</h1>
 
 <p>
-San Diego is a young and interesting City, the purpose of this blog page is to collect information about San Diego and southern california so that I can visit interesting places. Moreover this should be a repository for links to books and to maps where interesting locations may be found.
+
+San Diego is a young and interesting City, the purpose of this blog page is to
+collect information about San Diego and southern california so that I can visit
+interesting places. Moreover this should be a repository for links to books and
+to maps where interesting locations may be found. The day to day is recored in
+this <a href=./blog.html>blog</a>.
+
 </p>
+
+<h2> Map </h2>
+
+
+<div id="map"></div>
+    <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var foot_hills_by_de_alcala = {lat: 32.797346, lng:-117.1110787};
+  var foot_hills_by_de_alcala2 = {lat: 32.8119197,lng:-117.1290395};
+
+  var uluru = {lat: 32.797346, lng:-117.1110787};
+
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 12, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: foot_hills_by_de_alcala, map: map});
+  var marker2 = new google.maps.Marker({position: foot_hills_by_de_alcala2, map: map});
+}
+
+    </script>
+
+    <script async defer 
+     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5K7sP0EtiS-n0Pm9L5a3w9eSXjbBb8-U&callback=initMap"></script>
+
 
 <h2 id="format">Reading</h2>
 <h3 id="format">Best of California's Missions Mansions and Museums</h3>
@@ -109,6 +149,21 @@ was in production from 1957 till 1962 untill pilfering and caveins shit it
 down.
 
 </p>
+
+<h3> The missions of California - Bill Yenne </h3>
+
+<p>
+
+Detailed account of the early missions. This book has one of the most complete
+pictures of the Mission De Alcala. One interesting point is that in the 1750's
+after the murder of Jayme the number of cattle grew to 10,000 and sheep to
+20,000. The locations of these heards were on top of the hills of mission
+valley. If there is anywhere where I will find relics it will be in those
+hills. The peak number of baptims was reatched in 1797 at 565 which suggests
+the most major period in which the kumayeaay people were interacting with the
+missionaries.
+
+
 
 </body>
 </html>
