@@ -87,8 +87,18 @@
     <hr>
 <h2><a id="About" class="anchor" href="#About" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About</h2><hr>
 
+    <p>
+    <script>
+        function calculateAge(birthday) {
+            var ageDifMs = Date.now() - birthday
+            var ageDate = new Date(ageDifMs);
+            return Math.abs(ageDate.getUTCFullYear() - 1970);
+        }
+        startingMili=1538031600000
+    </script>
+    </p>
 
-	<p> I am a third year PhD student at the University of California San
+	<p> I am in year <script> document.write(calculateAge(startingMili) + 1)</script> of my PhD at the University of California San
 	Diego working with <a herf="http://cseweb.ucsd.edu/~snoeren/">Alex
 	Snoeren</a> as part of the <a
 	href="https://www.sysnet.ucsd.edu/sysnet/">SysNets Group</a>. I completed
