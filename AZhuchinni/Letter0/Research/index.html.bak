@@ -6,117 +6,101 @@
 		<title>CSE Effective Writing Group </title>
 	</head>
 <body>
-<h1 id="reading_lambda.pngreadinglambdauniversityofchicagoprogramminglanguagesreadinggroup"><img src="writing.jpg" alt="" title="Writing Image" /> UCSD CSE Effective Writing Group: Summer 2019</h1>
+<h1 id="reading_lambda.pngreadinglambdauniversityofchicagoprogramminglanguagesreadinggroup"><img src="writing.jpg" alt="" title="Writing Image" />A letter to Amy</h1>
+</p>
 
-<p>Writing clearly and effectively is difficult for most people, computer scientists are no exception. The purpose of this group is to collectively critique our own academic writing. Our cause is to improve communication in science for the benefit of all! </p>
+<h2 id="research">Research</h2>
 
-<h2 id="format">Format</h2>
-<p> 
+<p>
 
-Each week all members of the group will read a chapter of <a
-    href="https://www.amazon.com/Style-Lessons-Clarity-Grace-11th/dp/0321898680">Style
-    Lessons in Clarity and Grace</a>. One member of the group will submit a
-recent piece of their own writing for critique. All other members then apply
-the style rules from the weeks readings and suggest improvements. The goal is
-to improve our own writing style so submitted works should be written without
-the aid or correction of advisers. 
+If there is anything that marks my daily experince now, it's my work. Without a
+nod to the predominat expendeture of my mental time on earth a personal letter
+would be incomplete. 
 
 </p>
 
-<h2 id="format">Membership</h2>
+<p>
 
-All writing critiques are performed on unpublished academic literature. As
-such, posting direct online links to the documents could result in poaching.
-Group documents are hosted on Google Drive. Permission to the drive can be
-requested through this <a href="https://drive.google.com/drive/u/1/folders/0ALW984h95SRMUk9PVA">link</a>. 
+I needed to take classes again to satify my PhD requirements. For fun I
+syncronized my classes with my lab mates as an excuse to get to know them
+better. The first research project I embarked on was a complete farce. For an
+embedded systems class I pitched the idea that farming could be automated if
+only we could solve the problem of harveting perfectly ripe plants. I chose to
+study apples because of their loose assosiation to pedagogy and Satan.
+Specifically if their ripeness could be detected automatically with the use of
+a camera and WiFi. The answer is a resounding no. 1025 photographs of Royal
+Galla apples, a manilla tag studio, and an impressive image processing data set
+told me that apples, after picking, take months to develop signs of decay.
+Further they decompose at astoundingly different rates, and variations based on
+some known factors, like the farm of origin, and some still unkown to me. I
+presented this work to laughter and applause in front of the entire faculty and
+staff of our systems and networking group.
 
+</p>
 
-<h2 id="schedule">Schedule</h2>
+<p>
 
-<p>CSE2190 Wednesdays 13:00 </p>
+Alex Snoeren is my advisor now. He makes Ivan look like a laxidosal slob in
+terms of academic precision. I prepare my spoken language for 30 min before
+every meeting with him. I meditate on my charts and prepare for a barrage of
+questions at even the most nuanced relation between data points. It's a
+fantastic game and I'm a throughly better researcher then when my tenure at UBC
+expired.
 
+</p>
 
-<table>
-<col />
-<col />
-<col />
-<col />
-<thead>
-<tr>
-	<th>Date</th>
-	<th>Chapter</th>
-	<th>Paper</th>
-	<th>Leader</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-	<td>2019-7-10</td>
-	<td>N/A</td>
-	<td>Organizational Meeting - <a href="https://www.amazon.com/Style-Lessons-Clarity-Grace-11th/dp/0321898680">Style Lessons in Clarity and Grace</a></td>
-	<td>Ariana</td>
-</tr>
-<tr>
-	<td>2019-7-17</td>
-	<td>Actions</td>
-	<td><a href="https://drive.google.com/drive/u/1/folders/0ALW984h95SRMUk9PVA">The Fallacy of User Choice: Why We Need Regulatory Oversight for Personal Data</a></td>
-	<td>Ariana and Gautam</td>
-</tr>
-<tr>
-	<td>2019-7-24</td>
-	<td>Characters</td>
-	<td><a href="https://drive.google.com/a/eng.ucsd.edu/file/d/1gHOz85LB5yjSRapRdYn34BIKpC977DiO/view?usp=sharing">Concolic Execution: Finding Bugs by Mixing Concrete and Symbolic Execution</a></td>
-    <td>Craig Disselkoen</td>
-</tr>
-	<td>2019-7-30</td>
-	<td>Cohesion and Coherence</td>
-	<td><a href="https://i2.wp.com/learn.onemonth.com/wp-content/uploads/2017/08/1-10.png?w=845&ssl=1">TBD</a></td>
-    <td>TBD</td>
-</tr>
-</tr>
-	<td>2019-8-6</td>
-	<td>Emphasis</td>
-	<td><a href="https://i2.wp.com/learn.onemonth.com/wp-content/uploads/2017/08/1-10.png?w=845&ssl=1">TBD</a></td>
-    <td>TBD</td>
-</tr>
-</tr>
-	<td>2019-8-13</td>
-	<td>Motivationg Coherence</td>
-	<td><a href="https://i2.wp.com/learn.onemonth.com/wp-content/uploads/2017/08/1-10.png?w=845&ssl=1">TBD</a></td>
-    <td>TBD</td>
-</tr>
-</tr>
-	<td>2019-8-20</td>
-	<td>Global Coherence</td>
-	<td><a href="https://i2.wp.com/learn.onemonth.com/wp-content/uploads/2017/08/1-10.png?w=845&ssl=1">TBD</a></td>
-    <td>TBD</td>
-</tr>
-</tr>
-	<td>2019-8-27</td>
-	<td>Concision</td>
-	<td><a href="https://i2.wp.com/learn.onemonth.com/wp-content/uploads/2017/08/1-10.png?w=845&ssl=1">TBD</a></td>
-    <td>TBD</td>
-</tr>
-</tr>
-	<td>2019-9-4</td>
-	<td>Shape</td>
-	<td><a href="https://i2.wp.com/learn.onemonth.com/wp-content/uploads/2017/08/1-10.png?w=845&ssl=1">TBD</a></td>
-    <td>TBD</td>
-</tr>
-</tr>
-	<td>2019-9-11</td>
-	<td>Elegance</td>
-	<td><a href="https://i2.wp.com/learn.onemonth.com/wp-content/uploads/2017/08/1-10.png?w=845&ssl=1">TBD</a></td>
-    <td>TBD</td>
-</tr>
-</tr>
-	<td>2019-9-18</td>
-	<td>Ethics of Style</td>
-	<td><a href="https://i2.wp.com/learn.onemonth.com/wp-content/uploads/2017/08/1-10.png?w=845&ssl=1">TBD</a></td>
-    <td>TBD</td>
-</tr>
-</tbody>
-</table>
+<p>
+
+Maxwell Bland is a masters graduate of UCSD. He talks in riddles, paints his
+shoes, and acts like a child in the most abnoxcious of ways. He combines lazer
+like focus with a shallow understanding of computer science at large while
+simultanously providing insight at a level some assistant professors could only
+dream of. In some ways I acted as mentor to Max as his advisor was largly AWOL.
+We chatted and argued about philosopy, literature, music and memes. My favourte
+string to pull was mentioning David Foster Wallace and watch him explode into a
+tangent about the fall of socieoty due to post-modern thought, and the
+stategies upon which we could save ourselves from nihilism. I found myself
+paired with Max for a Networking group project in a class last fall taught my
+advisor. I had suggestd that we look into programmable networking for a class
+project and considered using some of the hardware in the lab.
+
+</p>
+
+<p>
+
+3pm Wednesday Max burst into my lab, sweat dripping down between his middle
+parted hair. "Stew, this is important I need you now". We walked out of the
+lab, down around the corner, to an unknown proffessors office, and I was sat down
+without explaination. "This is Stew, another researching of programmable
+networking" Max decleared. I was about a quarter second from retreating back
+into myself in the face of real researchers in the feild, but Fortuna got the
+better of me and I decided to fully bullshit for a full hour abour research I
+knew very little about. Sitting across from me was a Cavium executive, and a
+professor whose name I still don't know. I pretended I understood programmable
+networking, and within an hour I was back in my lab. Within two weeks we had
+been gifted two bleeding edge programmble NIC's worth around 10K. I started a
+research project around the NIC"s, Max although enthusiastic about staring the
+project, never contributed a line of code to the repo.
+
+</p>
+
+<p>
+
+It's been six months since that fateful day. I've proposed a novel operating
+system for isloating tenants on light weight programmalbe networking devices.
+I have two members of the lab working with me on it and we will likely published
+to a major conference within a year. Max graduated with his masters degree and
+disapered to UIUC. I chat with him occasionally, he sends me art and music.
+It would have been fun to push the research further with him, but he is a hacker at heart and will only ever do security. His antics are missed in the lab, it seems like just yesterday
+he wore a shirt promoting a tijuana strip club to an event organized largely by
+the GRADWIC society, or that we argued about the best death grips albums, or
+the subltly of transgresive 19th century Frech nighilist erotica.
+</p>
+
+<p>
+<h2><a href="../Recreation/index.html"> Recreation </a></h2>
+</p>
+
 
 </body>
 </html>
