@@ -102,6 +102,17 @@ header h2 {
   margin-bottom: 40px;
 }
 
+#Myself {
+  background-image: url('../images/stewart_cropped.png');
+  float:left;
+  height: 324px; 
+  width: 250px; 
+}
+
+#Myself:hover {
+  background-image: url('../images/stewart_boat_cropped.png');
+}
+
 a.button {
   display: block;
   float: left;
