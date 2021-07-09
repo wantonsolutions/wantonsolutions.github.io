@@ -15,17 +15,91 @@ function init()
 {
   //context= myCanvas.getContext('2d');
   //setInterval(draw,100);
+  initpositions();
   initpictures();
   setInterval(drawpictures,100);
 }
 
-var divs=[document.createElement('div'),document.createElement('div'), document.createElement('div'), document.createElement('div'), document.createElement('div')];
-var ids=["hummingbird_1","hummingbird_2", "hummingbird_3","hummingbird_4", "hummingbird_5"];
-var divx=[250, 100, 50, 75, 200];
-var divy=[50, 100, 60, 15, 200];
-var divdx=[20, 15, 5, 10, 10];
-var divdy=[21, 10, 10, 20, 10];
-var box=[70, 60, 80, 50, 70];
+function getWidth() {
+    return Math.max(
+      document.body.scrollWidth,
+      document.documentElement.scrollWidth,
+      document.body.offsetWidth,
+      document.documentElement.offsetWidth,
+      document.documentElement.clientWidth
+    );
+  }
+  
+  function getHeight() {
+    return Math.max(
+      document.body.scrollHeight,
+      document.documentElement.scrollHeight,
+      document.body.offsetHeight,
+      document.documentElement.offsetHeight,
+      document.documentElement.clientHeight
+    );
+  }
+
+var data_dir="data/move_hummingbird_images"
+
+//var divs=[document.createElement('div'),document.createElement('div'), document.createElement('div'), document.createElement('div'), document.createElement('div')];
+
+var ids=[
+data_dir+"/hummingbird_1",
+data_dir+"/hummingbird_2", 
+data_dir+"/hummingbird_3",
+data_dir+"/hummingbird_4", 
+data_dir+"/hummingbird_5",
+data_dir+"/hummingbird_1",
+data_dir+"/hummingbird_2", 
+data_dir+"/hummingbird_3",
+data_dir+"/hummingbird_4", 
+data_dir+"/hummingbird_5",
+];
+
+var divs=[]
+var divx=[]
+var divy=[]
+var divdx=[]
+var divdy=[]
+var box=[]
+var radius=[];
+
+function initpositions () {
+    max_x=getWidth()
+    max_y=getHeight()
+    for (i=0;i<ids.length;i++){
+        divx.push(Math.random() * (getWidth() - 100))
+        divy.push(Math.random() * (getHeight() - 100))
+        //randomize left and right movement
+        dx = Math.random() * 20
+        if (Math.random() < 0.5) {
+            dx = dx * -1
+        }
+        divdx.push(dx)
+
+        dy = Math.random() * 20
+        if (Math.random() < 0.5) {
+            dy = dy * -1
+        }
+        divdy.push(dy)
+        box.push(50 + (Math.random() * 30))
+
+        radius.push(15)
+
+        divs.push(document.createElement('div'))
+    }
+
+}
+
+
+
+
+//var divx=[250, 100, 50, 75, 200];
+//var divy=[50, 100, 60, 15, 200];
+//var divdx=[20, 15, 5, 10, 10];
+//var divdy=[21, 10, 10, 20, 10];
+//var box=[70, 60, 80, 50, 70];
 
 function initpictures () {
     for (i=0;i<ids.length;i++){
@@ -60,8 +134,8 @@ function drawpictures() {
     }
 
   for (i=0;i<divs.length;i++){
-        if( divx[i] < 0 || divx[i]+box[i]>window.innerWidth ) divdx[i]=-divdx[i]; 
-        if( divy[i] < 0 || divy[i]+box[i]>window.innerHeight ) divdy[i]=-divdy[i]; 
+        if( divx[i] < 0 || divx[i]+box[i]>getWidth() ) divdx[i]=-divdx[i]; 
+        if( divy[i] < 0 || divy[i]+box[i]>getHeight() ) divdy[i]=-divdy[i]; 
         divx[i]+=divdx[i]; 
         divy[i]+=divdy[i];
         divs[i].style.left = divx[i].toString() + 'px';
@@ -88,6 +162,14 @@ function drawpictures() {
 
            }
 
+       }
+   }
+
+   for (i=0;i<divs.length;i++) {
+       if (divdx[i] < 0) {
+           divs[i].style.transform = 'scaleX(-1)';
+       } else {
+           divs[i].style.transform = 'scaleX(1)';
        }
    }
 
