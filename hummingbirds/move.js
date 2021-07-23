@@ -40,7 +40,7 @@ function getWidth() {
     );
   }
 
-var data_dir="data/move_hummingbird_images"
+var data_dir="images/data/move_hummingbird_images"
 
 //var divs=[document.createElement('div'),document.createElement('div'), document.createElement('div'), document.createElement('div'), document.createElement('div')];
 
