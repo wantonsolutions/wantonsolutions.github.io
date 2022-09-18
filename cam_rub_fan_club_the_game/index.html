@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Welcome to Cam Rub Fan club the game (Critter Edition)</h1>
+<h2>Press Space to generate the next position!</h2>
+
+
+
+<textarea name="comments" id="rollbox" 
+style="
+width:200px;
+height:100px;
+background-color:grey;
+color:black;
+border:blue;
+padding:5%;
+font:100px/100px sans-serif;"
+>:)</textarea>
+
+
+<script>
+function roll() {
+
+ dice_roll = Math.floor(Math.random() * 6) + 1;
+ if (dice_roll >= 6) {
+     level = "high";
+     color = "red";
+     max_val = 16;
+ } else if ( dice_roll >=4 ) {
+     level = "med";
+     color = "yellow";
+     max_val = 12;
+ } else {
+     level = "low";
+     color = "blue";
+     max_val = 8;
+ }
+ value = Math.floor(Math.random() * max_val)
+  
+  document.getElementById("rollbox").value = value;
+  document.getElementById("rollbox").style.backgroundColor = color;
+}
+
+
+  document.body.onkeyup = function(e) {
+  if (e.key == " " ||
+      e.code == "Space" ||      
+      e.keyCode == 32      
+  ) {
+    roll()
+  }
+}
+</script>
+
+</body>
+</html>
