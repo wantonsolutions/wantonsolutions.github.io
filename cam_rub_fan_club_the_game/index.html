@@ -29,14 +29,14 @@ function roll() {
      max_val = 16;
  } else if ( dice_roll >=4 ) {
      level = "med";
-     color = "yellow";
+     color = "green";
      max_val = 12;
  } else {
      level = "low";
      color = "blue";
      max_val = 8;
  }
- value = Math.floor(Math.random() * max_val)
+ value = Math.floor(Math.random() * max_val) + 1
   
   document.getElementById("rollbox").value = value;
   document.getElementById("rollbox").style.backgroundColor = color;
