@@ -30,15 +30,15 @@
   dice_roll = Math.floor(Math.random() * 6) + 1;
   if (dice_roll >= 6) {
       level = "high";
-      color = "red";
+      color = "#f1433f";
       max_val = 16;
   } else if ( dice_roll >=4 ) {
       level = "med";
-      color = "green";
+      color = "#a9cf54";
       max_val = 12;
   } else {
       level = "low";
-      color = "blue";
+      color = "#70b7ba";
       max_val = 8;
   }
   value = Math.floor(Math.random() * max_val) + 1
@@ -66,8 +66,7 @@
 <div class="main">
 
 <h1>Welcome to Cam Rub Fan club the game (Critter Edition)</h1>
-<h2>This big display decides where the next gems are placed</h2>
-<h2>Press Space to generate the next position!</h2>
+
 <h1>Instructions</h1>
 
 <h2> Overview</h2>
