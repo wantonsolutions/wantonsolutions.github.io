@@ -21,7 +21,8 @@
   font:100px/100px sans-serif;"
   >:)</div></center>
 
-  <center><h2>Press "r" </h2></center>
+  <center><h2>Press "r" <br> Or click </h2></center>
+  <hr>
 
   <a href="#overview">Overview</a>
   <a href="#characters">Characters</a>
@@ -30,7 +31,6 @@
   <a href="#scoring">Scoring</a>
   <a href="#movement">Movement</a>
 
-  <hr>
 
 
   <script>
@@ -68,6 +68,9 @@
     ) {
       roll()
     }
+
+    var x = document.getElementById("rollbox");
+    x.addEventListener("click", roll);
   }
   </script>
 </div> 
