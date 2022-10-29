@@ -159,9 +159,7 @@ function drawpictures() {
 
                divdx[j] = divdx[j] + differencex;
                divdy[j] = divdy[j] + differencey;
-
            }
-
        }
    }
 
@@ -177,19 +175,7 @@ function drawpictures() {
         document.body.appendChild(divs[i]);
     }
 }
-/*
-var myLayer = document.createElement('div');
-myLayer.id = 'bookingLayer';
-myLayer.style.position = 'absolute';
-myLayer.style.left = '10px';
-myLayer.style.top = '10px';
-myLayer.style.width = '50px';
-myLayer.style.height = '50px';
-//myLayer.style.padding = '10px';
-//myLayer.style.background = '#00ff00';
-myLayer.innerHTML = '<img src="pencil.png" />';
-document.body.appendChild(myLayer);
-*/
+
 function draw()
 {
   context.clearRect(min_x,min_y, max_x,max_y);
