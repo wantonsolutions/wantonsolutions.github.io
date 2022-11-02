@@ -23,7 +23,7 @@ function init()
 function getWidth() {
     return Math.max(
       document.body.scrollWidth,
-      document.documentElement.scrollWidth,
+    //   document.documentElement.scrollWidth,
       document.body.offsetWidth,
       document.documentElement.offsetWidth,
       document.documentElement.clientWidth
@@ -33,7 +33,7 @@ function getWidth() {
   function getHeight() {
     return Math.max(
       document.body.scrollHeight,
-      document.documentElement.scrollHeight,
+    //   document.documentElement.scrollHeight,
       document.body.offsetHeight,
       document.documentElement.offsetHeight,
       document.documentElement.clientHeight
@@ -41,6 +41,19 @@ function getWidth() {
   }
 
 var data_dir="./flying_images/"
+
+var styles = `
+.rotate {
+  -webkit-transition: -webkit-transform 1s;
+}
+
+.rotate:hover {
+  -webkit-transform: rotate(360deg);
+}
+`
+var styleSheet = document.createElement("style")
+styleSheet.innerText = styles
+document.head.appendChild(styleSheet)
 
 //var divs=[document.createElement('div'),document.createElement('div'), document.createElement('div'), document.createElement('div'), document.createElement('div')];
 
@@ -109,7 +122,7 @@ function initpictures () {
         divs[i].style.height = box[i].toString() + 'px';
         //myLayer.style.padding = '10px';
         //myLayer.style.background = '#00ff00';
-        divs[i].innerHTML = '<img src="' + ids[i] + '.png" />';
+        divs[i].innerHTML = '<img class="rotate" src="' + ids[i] + '.png" />';
         document.body.appendChild(divs[i]);
     }
 }
@@ -127,9 +140,9 @@ function setIds(IDs) {
 
 function drawpictures() {
 
-    for (i=0;i<divs.length;i++){
-        document.body.removeChild(divs[i]);
-    }
+    // for (i=0;i<divs.length;i++){
+    //     document.body.removeChild(divs[i]);
+    // }
 
   for (i=0;i<divs.length;i++){
         if( divx[i] < 0 || divx[i]+box[i]>getWidth() ) divdx[i]=-divdx[i]; 
@@ -169,9 +182,9 @@ function drawpictures() {
        }
    }
 
-    for (i=0;i<divs.length;i++){
-        document.body.appendChild(divs[i]);
-    }
+    // for (i=0;i<divs.length;i++){
+    //     document.body.appendChild(divs[i]);
+    // }
 }
 
 function draw()
