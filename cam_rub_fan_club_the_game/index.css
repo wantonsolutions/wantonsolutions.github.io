@@ -93,7 +93,13 @@ h2 {
   padding: 20px;
   margin: 10px;
   border-radius: 10px;
+
 }
+.sub_instructions h2 {
+    color: #4056A1;
+    /* color: #f13c20; */
+}
+
  .grid-container {
   display: grid;
   gap: 2px 3%;
