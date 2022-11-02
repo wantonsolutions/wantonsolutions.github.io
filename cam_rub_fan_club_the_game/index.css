@@ -49,7 +49,7 @@ h2 {
   border:rgb(0, 0, 0);
   padding:5%;
   font:100px/100px sans-serif;
-  border-radius: 10px;"
+  border-radius: 10px;
 }
 
 /* The navigation menu links */
@@ -73,7 +73,7 @@ h2 {
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
+@media (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 } 
@@ -96,7 +96,7 @@ h2 {
  .grid-container {
   display: grid;
   gap: 2px 3%;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: repeat(auto-fit , minmax(250px, 1fr));
 }
 
 
@@ -117,24 +117,24 @@ h2 {
   background-image: url('Board_Setup_0.png');
   float:center;
   background-size:100% 100%;
-  height: 400px; 
-  width: 400px; 
+  width: 400px;
+  height: 400px;
 }
+
+@media (min-width: 300px) {
+  #Board{width:200px}
+  #Board{height:200px}
+} 
+
+@media (min-width: 500px) {
+  #Board{width:400px}
+  #Board{height:400px}
+} 
+
+
 
 #Board:hover {
   background-image: url('Board_Setup_1.png');
-}
-
-#stew {
-  background-image: url('stew_0.png');
-  float:center;
-  background-size:100% 100%;
-  height: 146px; 
-  width: 159px; 
-}
-
-#stew:hover {
-  background-image: url('stew_1.png');
 }
 
 #cam {
@@ -143,12 +143,25 @@ h2 {
   background-size:100% 100%;
   height: 146px; 
   width: 159px; 
+  /* width: 100%; */
 }
 
 #cam:hover {
   background-image: url('cam_1.png');
 }
 
+
+#trent {
+  background-image: url('trent_0.png');
+  float:center;
+  background-size:100% 100%;
+  height: 146px; 
+  width: 159px; 
+}
+
+#trent:hover {
+  background-image: url('trent_1.png');
+}
 #winnie {
   background-image: url('winnie_0.png');
   float:center;
@@ -161,14 +174,14 @@ h2 {
   background-image: url('winnie_1.png');
 }
 
-#trent {
-  background-image: url('trent_0.png');
+#stew {
+  background-image: url('stew_0.png');
   float:center;
   background-size:100% 100%;
   height: 146px; 
   width: 159px; 
 }
 
-#trent:hover {
-  background-image: url('trent_1.png');
+#stew:hover {
+  background-image: url('stew_1.png');
 }
