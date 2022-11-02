@@ -1,3 +1,19 @@
+body {
+  background-color: #f1f0eb;
+}
+
+h1 { 
+  /*color: #f13c20; */
+  color: #4056A1;
+}
+
+h2 {
+  /*color: #f13c20;*/
+  /*color: #4056A1;*/
+  color: #D79922;
+  /*color: #c5cbe3; */
+}
+
 .column {
     float: left;
     width: 40.00%;
@@ -19,9 +35,21 @@
   /* z-index: 1; Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: rgb(224, 202, 238); /* Black */
+  background-color: #EFE2BA; /* Black */
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
+}
+
+.rollbox {
+  width:160px;
+  height:100px;
+  /*background-color:grey;*/
+  background-color: #f13c20;
+  color:black;
+  border:rgb(0, 0, 0);
+  padding:5%;
+  font:100px/100px sans-serif;
+  border-radius: 10px;"
 }
 
 /* The navigation menu links */
@@ -29,13 +57,13 @@
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #D79922;
   display: block;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #4056A1;
 }
 
 /* Style page content */
@@ -52,7 +80,7 @@
 
 .instructions {
   width: 90%;
-  background: rgb(230, 221, 235);
+  background-color: #EFE2BA; /* Black */
   padding: 20px;
   margin: 10px;
   border-radius: 10px;
@@ -60,7 +88,7 @@
 
 .sub_instructions {
   width: 90%;
-  background: rgb(225, 204, 236);
+  background: #D79922;
   padding: 20px;
   margin: 10px;
   border-radius: 10px;
@@ -73,6 +101,7 @@
 
 
 .grid-item {
+  border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 2px;
