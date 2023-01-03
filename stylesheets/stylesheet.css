@@ -190,6 +190,11 @@ code {
   border: solid 1px #ddd;
 }
 
+.google_scholar{
+  mix-blend-mode: multiply;
+  border-radius: 10px;
+}
+
 pre {
   padding: 20px;
   overflow: auto;
