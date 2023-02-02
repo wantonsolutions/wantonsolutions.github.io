@@ -6,6 +6,13 @@
     width: 200px;
 }
 
+img {
+    float: left;
+    shape-outside: url(../images/star-shape1-20.png);
+    shape-image-threshold: .2;
+  }
+
+
 #red_light {
     background-color: #ff0000df;
 }
