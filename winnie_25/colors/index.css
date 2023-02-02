@@ -1,0 +1,199 @@
+.light {
+    position: absolute;
+    z-index: 9;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+}
+
+#red_light {
+    background-color: #ff0000df;
+}
+#yellow_light {
+    background-color: #ffff00c9;
+}
+#green_light {
+    background-color: #00ff00c0;
+}
+#magenta_light {
+    background-color: #b500b5d1;
+}
+#blue_light {
+    background-color: #0000ffdd;
+}
+#teal_light {
+    background-color: #00ffffde;
+}
+
+.sb {
+    height: 50px;
+    width: 50px;
+    font-size:30px;
+    text-align: center;
+    line-height: 50px;
+    vertical-align: middle;
+
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px;
+    /* gap: 10px; */
+  }
+
+
+/* #red */
+.rr {
+    background-color: #d40000ff;
+    color: #d40000ff;
+}
+.ry {
+    background-color: #d40000ff;
+    color: #d4d400ff;
+}
+.rg {
+    background-color: #d40000ff;
+    color: #d40000ff;
+}
+.rm {
+    background-color: #d40000ff;
+    color: #d500d4ff;
+}
+.rb {
+    background-color: #d40000ff;
+    color: #0000d4ff;
+}
+.rt {
+    background-color: #d40000ff;
+    color: #00d4d5ff;
+}
+
+/* Yellow */
+.yr {
+    background-color: #d4d400ff;
+    color: #d40000ff;
+}
+.yy {
+    background-color: #d4d400ff;
+    color: #d4d400ff;
+}
+.yg {
+    background-color: #d4d400ff;
+    color: #d40000ff;
+}
+.ym {
+    background-color: #d4d400ff;
+    color: #d500d4ff;
+}
+.yb {
+    background-color: #d4d400ff;
+    color: #0000d4ff;
+}
+.yt {
+    background-color: #d4d400ff;
+    color: #00d4d5ff;
+}
+
+/* Green */
+.gr {
+    background-color: #00d400ff;
+    color: #d40000ff;
+}
+.gy {
+    background-color: #00d400ff;
+    color: #d4d400ff;
+}
+.gg {
+    background-color: #00d400ff;
+    color: #d40000ff;
+}
+.gm {
+    background-color: #00d400ff;
+    color: #d500d4ff;
+}
+.gb {
+    background-color: #00d400ff;
+    color: #0000d4ff;
+}
+.gt {
+    background-color: #00d400ff;
+    color: #00d4d5ff;
+}
+
+/* Magenta */
+.mr {
+    background-color: #d500d4ff;
+    color: #d40000ff;
+}
+.my {
+    background-color: #d500d4ff;
+    color: #d4d400ff;
+}
+.mg {
+    background-color: #d500d4ff;
+    color: #d40000ff;
+}
+.mm {
+    background-color: #d500d4ff;
+    color: #d500d4ff;
+}
+.mb {
+    background-color: #d500d4ff;
+    color: #0000d4ff;
+}
+.mt {
+    background-color: #d500d4ff;
+    color: #00d4d5ff;
+}
+
+/* Blue */
+.br {
+    background-color: #0000d4ff;
+    color: #d40000ff;
+}
+.by {
+    background-color: #0000d4ff;
+    color: #d4d400ff;
+}
+.bg {
+    background-color: #0000d4ff;
+    color: #d40000ff;
+}
+.bm {
+    background-color: #0000d4ff;
+    color: #d500d4ff;
+}
+.bb {
+    background-color: #0000d4ff;
+    color: #0000d4ff;
+}
+.bt {
+    background-color: #0000d4ff;
+    color: #00d4d5ff;
+}
+
+/* Teal */
+.tr {
+    background-color: #00d4d5ff;
+    color: #d40000ff;
+}
+.ty {
+    background-color: #00d4d5ff;
+    color: #d4d400ff;
+}
+.tg {
+    background-color: #00d4d5ff;
+    color: #d40000ff;
+}
+.tm {
+    background-color: #00d4d5ff;
+    color: #d500d4ff;
+}
+.tb {
+    background-color: #00d4d5ff;
+    color: #0000d4ff;
+}
+.tt {
+    background-color: #00d4d5ff;
+    color: #00d4d5ff;
+}
