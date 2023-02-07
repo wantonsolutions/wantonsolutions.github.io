@@ -6,15 +6,24 @@
     width: 200px;
 }
 
-img {
+/* img {
     float: left;
     shape-outside: url(../images/star-shape1-20.png);
     shape-image-threshold: .2;
-  }
+  } */
 
+#red_t_block {
+    position: absolute;
+    z-index: 9;
+    text-align: center;
+    height: 100px;
+    width: 150px;
+}
 
 #red_light {
     background-color: #ff0000df;
+    /* clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%); */
+    /* clip-path: polygon(50% 0%, 35% 25%, 35% 0%, 65% 0%, 65% 25); */
 }
 #yellow_light {
     background-color: #ffff00c9;
