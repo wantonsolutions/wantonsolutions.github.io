@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /AZhuchinni/
+Disallow: /winnie_25/
