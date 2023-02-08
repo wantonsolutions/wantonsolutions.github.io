@@ -1,12 +1,22 @@
 // Make the DIV element draggable:
-dragElement(document.getElementById("red_t_block"));
-// dragElement(document.getElementById("yellow_light"));
-// dragElement(document.getElementById("red_light"));
-// dragElement(document.getElementById("green_light"));
-// dragElement(document.getElementById("magenta_light"));
-// dragElement(document.getElementById("blue_light"));
-// dragElement(document.getElementById("teal_light"));
 
+// shapes = ["blue_d", "blue_l", "blue_m", "blue_s", "blue_tl", "green_l", "green_u", "magenta_t", "red_m", "red_s", "red_square", "teal_l", "teal_z", "yellow_d", "yellow_light"];
+shapes = [
+  "blue_s", 
+  "blue_tl", 
+  "green_l", 
+  "green_u", 
+  "magenta_t", 
+  "red_m", 
+  "red_s", 
+  "red_square", 
+  "teal_l", 
+  "teal_z", 
+  "yellow_d"]
+
+for (i = 0; i < shapes.length; i++) {
+  dragElement(document.getElementById(shapes[i]));
+}
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
@@ -49,7 +59,7 @@ function dragElement(elmnt) {
     box_size = first_box.offsetWidth;
     baseline_y = first_box.offsetTop % box_size;
     baseline_x = first_box.offsetLeft % box_size;
-    // console.log("Before: " +elmnt.style.left + "," + elmnt.style.top);
+    console.log("Before: " +elmnt.style.left + "," + elmnt.style.top);
     // console.log(elmnt.style.top)
     // console.log(elmnt.offsetTop - pos2)
     ysnap = (elmnt.offsetTop - pos2) % box_size;
@@ -61,5 +71,13 @@ function dragElement(elmnt) {
 
     document.onmouseup = null;
     document.onmousemove = null;
+
+    check_complete();
+  }
+
+  function check_complete() {
+    console.log("Checking complete");
+    // for 
+    //  = document.getElementById("first_box");
   }
 }
