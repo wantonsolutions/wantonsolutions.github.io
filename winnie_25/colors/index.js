@@ -16,7 +16,20 @@ shapes = [
 
 for (i = 0; i < shapes.length; i++) {
   dragElement(document.getElementById(shapes[i]));
+  scatterElement(document.getElementById(shapes[i]));
 }
+
+function scatterElement(elmnt) {
+  x1 = 400;
+  x2 = 1200;
+  y1 = 100;
+  y2 = 500
+  elmnt.style.top =  y1 + (Math.random() * (y2 - y1)) + "px";
+  elmnt.style.left =  x1 + (Math.random() * (x2 - x1)) + "px";
+  // elmnt.style.top =  top_start + (Math.random() * (screen.height - top_start)) + "px";
+  // elmnt.style.left =  left_start + (Math.random() * (screen.width - left_start)) + "px";
+}
+
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
