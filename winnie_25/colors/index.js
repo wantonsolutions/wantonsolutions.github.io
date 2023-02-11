@@ -14,6 +14,21 @@ shapes = [
   "teal_z", 
   "yellow_d"]
 
+// coords ={
+//   "red_square":[0,0], 
+//   "green_l": [2,0], 
+//   "teal_l": [3, 0], 
+//   "red_s": [6,0], 
+//   "blue_s", 
+//   "blue_tl", 
+//   "green_u", 
+//   "magenta_t", 
+//   "red_m", 
+//   "teal_z", 
+//   "yellow_d"
+// }
+
+
 for (i = 0; i < shapes.length; i++) {
   dragElement(document.getElementById(shapes[i]));
   scatterElement(document.getElementById(shapes[i]));
