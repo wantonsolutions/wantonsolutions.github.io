@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="theme.css" />
+		<meta name="Format" content="complete" />
+		<title>Rare Books</title>
+	</head>
+<body>
+<h1 id="rea"><img src="writing.jpg" alt="" title="Writing Image" />Slider Riddle</h1>
+</p>
+
+
+<div id="love_letter_wrapper">
+
+<div id="love_letter" style="overflow-wrap:anywhere">
+	<p>
+	I think this might be a bit before dewey decimal, I'm indexed under both of your names.
+	</p>
+	<img src="rare_books.jpg" width="500px"></img>
+</div> <!-- love letter wrapper-->
+
+
+
+</body>
+
+	<script type "text/javascript" src="cypher.js"></script>
+	<script type "text/javascript">
+		const myCipher = cipher('gmail')
+		var ctext = myCipher(document.getElementById("love_letter").innerHTML)
+		document.getElementById("love_letter").innerHTML = ctext
+
+	</script>
+
+	<script type "text/javascript">
+		answer = window.prompt("Moore Men Emotional Outlet (5 letters)")
+		const myDecipher = decipher(answer)
+		decletter = myDecipher(document.getElementById("love_letter").innerHTML)
+		document.getElementById("love_letter").innerHTML = decletter
+	</script>
+
+<!-- Using https://stackoverflow.com/questions/18279141/javascript-string-encryption-and-decryption-->
+
+</html>
