@@ -14,24 +14,37 @@ shapes = [
   "teal_z", 
   "yellow_d"]
 
-// coords ={
-//   "red_square":[0,0], 
-//   "green_l": [2,0], 
-//   "teal_l": [3, 0], 
-//   "red_s": [6,0], 
-//   "blue_s", 
-//   "blue_tl", 
-//   "green_u", 
-//   "magenta_t", 
-//   "red_m", 
-//   "teal_z", 
-//   "yellow_d"
-// }
+coords ={
+  "red_square":[5.5,3.5], 
+  "green_l": [6,2], 
+  "teal_l": [7, 1.5], 
+  "red_s": [5.5,1], 
+  "blue_s": [5.5,2], 
+  "blue_tl": [7.5,3], 
+  "green_u": [4,2], 
+  "magenta_t": [4,3],
+  "red_m": [4.5,1], 
+  "teal_z": [6.5,3],
+  "yellow_d": [7,2],
+}
 
 
 for (i = 0; i < shapes.length; i++) {
   dragElement(document.getElementById(shapes[i]));
-  scatterElement(document.getElementById(shapes[i]));
+  // scatterElement(document.getElementById(shapes[i]));
+  placeElement(document.getElementById(shapes[i]));
+}
+
+function placeElement(elmnt) {
+  first_box = document.getElementById("first_box");
+  box_size = first_box.offsetWidth;
+  baseline_y = first_box.offsetTop % box_size;
+  baseline_x = first_box.offsetLeft % box_size;
+
+  elmnt.style.left = coords[elmnt.id][0]* 100 + baseline_x  + "px";
+  elmnt.style.top = coords[elmnt.id][1] * 100 + baseline_y + "px";
+  // elmnt.style.top =  top_start + (Math.random() * (screen.height - top_start)) + "px";
+  // elmnt.style.left =  left_start + (Math.random() * (screen.width - left_start)) + "px";
 }
 
 function scatterElement(elmnt) {
