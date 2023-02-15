@@ -1,100 +1,61 @@
 
-var rows = 3;
-var columns = 3;
+var rows;
+var columns;
+
+var source_dir; // = "sad_winnie_3x3"
 
 var currTile;
 var otherTile; //blank tile
 
 var turns = 0;
+var empty_tile;
 
-//var imgOrder = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
-//var imgOrder = ["1", "3", "2", "4", "5", "6", "7", "8", "9"];
-// var imgOrder = ["4", "2", "8", "5", "1", "6", "7", "9", "3"];
-var imgOrder = ["3", "1", "7", "4", "0", "5", "6", "8", "2"];
 
-window.onload = function() {
+
+function setup_puzzle() {
     for (let r=0; r < rows; r++) {
         for (let c=0; c < columns; c++) {
-
             //<img id="0-0" src="1.jpg">
             let tile = document.createElement("img");
             tile.id = r.toString() + "-" + c.toString();
-            tile.src = imgOrder.shift() + ".png";
-
-            //DRAG FUNCTIONALITY
-            tile.addEventListener("dragstart", dragStart);  //click an image to drag
-            tile.addEventListener("dragover", dragOver);    //moving image around while clicked
-            tile.addEventListener("dragenter", dragEnter);  //dragging image onto another one
-            tile.addEventListener("dragleave", dragLeave);  //dragged image leaving anohter image
-            tile.addEventListener("drop", dragDrop);        //drag an image over another image, drop the image
-            tile.addEventListener("dragend", dragEnd);      //after drag drop, swap the two tiles
+            tile.src = source_dir + "/" + imgOrder.shift() + ".png";
             document.onkeydown = checkKey;
-
             document.getElementById("board").append(tile);
-
         }
     }
 }
-
-function dragStart() {
-    currTile = this; //this refers to the img tile being dragged
-}
-
-function dragOver(e) {
-    e.preventDefault();
-}
-
-function dragEnter(e) {
-    e.preventDefault();
-}
-
-function dragLeave() {
+function load_puzzle(directory, in_rows, in_columns, scramble){
+    rows = in_rows;
+    empty_tile=(rows-1).toString() + ".png"
+    columns = in_columns;
+    source_dir = directory;
+    turns = 0;
+    imgOrder=scramble;
+    setup_puzzle();
 
 }
 
-function dragDrop() {
-    otherTile = this; //this refers to the img tile being dropped on
-}
-
-function dragEnd() {
-    if (!otherTile.src.includes("2.png")) {
-        return;
+function ids_from_dim(rows, columns) {
+    var ids = [];
+    for (let r=0; r < rows; r++) {
+        for (let c=0; c < columns; c++) {
+            ids.push(r.toString() + "-" + c.toString());
+        }
     }
+    return ids;
+}
 
-    let currCoords = currTile.id.split("-"); //ex) "0-0" -> ["0", "0"]
-    let r = parseInt(currCoords[0]);
-    let c = parseInt(currCoords[1]);
-
-    let otherCoords = otherTile.id.split("-");
-    let r2 = parseInt(otherCoords[0]);
-    let c2 = parseInt(otherCoords[1]);
-
-    let moveLeft = r == r2 && c2 == c-1;
-    let moveRight = r == r2 && c2 == c+1;
-
-    let moveUp = c == c2 && r2 == r-1;
-    let moveDown = c == c2 && r2 == r+1;
-
-    let isAdjacent = moveLeft || moveRight || moveUp || moveDown;
-
-    if (isAdjacent) {
-        let currImg = currTile.src;
-        let otherImg = otherTile.src;
-
-        currTile.src = otherImg;
-        otherTile.src = currImg;
-
-        turns += 1;
-        document.getElementById("turns").innerText = turns;
+function pngs_from_dim(rows, columns) {
+    var pngs = [];
+    for (let i=0; i < rows * columns; i++) {
+         pngs.push(i.toString());
     }
-
-    win();
-
+    return pngs;
 }
 
 function check_win() {
-    var ids = ["0-0", "0-1", "0-2", "1-0", "1-1", "1-2", "2-0", "2-1", "2-2"];
-    var pngs = ["0", "1", "2", "3", "4", "5", "6", "7", "8"];
+    var ids = ids_from_dim(rows, columns);
+    var pngs = pngs_from_dim(rows, columns);
     for (var i =0; i < ids.length; i++) {
         if (document.getElementById(ids[i]).src.includes(pngs[i] + ".png")){
             continue;
@@ -114,7 +75,7 @@ function win() {
 
 
 function get_element_by_src(source_string){
-    var ids = ["0-0", "0-1", "0-2", "1-0", "1-1", "1-2", "2-0", "2-1", "2-2"];
+    var ids = ids_from_dim(rows, columns);
     for (var i =0; i < ids.length; i++) {
         if (document.getElementById(ids[i]).src.includes(source_string)){
             elem = document.getElementById(ids[i]);
@@ -129,7 +90,7 @@ function checkKey(e) {
 
     e = e || window.event;
 
-    empty_piece = get_element_by_src("2.png")
+    empty_piece = get_element_by_src(empty_tile)
     console.log(empty_piece.id)
 
     let currCoords = empty_piece.id.split("-"); //ex) "0-0" -> ["0", "0"]

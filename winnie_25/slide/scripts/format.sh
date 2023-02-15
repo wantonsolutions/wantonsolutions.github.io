@@ -20,6 +20,8 @@ fi
 width=`convert $image -print "%w"`
 height=`convert $image -print "%h"`
 
+echo $width $height
+
 if [ $width != $height ]; then
     echo "$image is not square"
     exit 1
