@@ -70,6 +70,7 @@ function check_win() {
 function win() {
     if(check_win()){
         window.alert("CONGRATULATIONS You win!");
+        window.location.replace("../slide-password/index.html")
     }
 }
 
