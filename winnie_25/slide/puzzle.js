@@ -69,7 +69,7 @@ function check_win() {
 
 function win() {
     if(check_win()){
-        window.alert("CONGRATULATIONS You win!");
+        window.alert("You Win! If only true happiness was this easy :) Solve one more riddle and then you can move on to the next level!");
         window.location.replace("../slide-password/index.html")
     }
 }
