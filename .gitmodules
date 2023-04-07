@@ -1,0 +1,3 @@
+[submodule "emotions"]
+	path = emotions
+	url = https://github.com/wantonsolutions/emotions
